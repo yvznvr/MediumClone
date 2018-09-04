@@ -1,5 +1,4 @@
-﻿@using MediumClone.Models
-@model IEnumerable<Post>
+﻿@model IEnumerable<Post>
 
 
 @foreach (var item in Model)
@@ -14,5 +13,6 @@
 @{
     var data = (Post)ViewData["secilenNesne"];
 }
+
 <h2>Seçilen Nesne Başlığı: @data.title </h2>
 <h2>Seçilen Nesne Başlığı: @data.content </h2>

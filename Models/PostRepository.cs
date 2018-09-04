@@ -7,28 +7,35 @@ namespace MediumClone.Models
 {
     public class PostRepository: IPostRepository
     {
-        List<Post> posts = new List<Post>();
+        private readonly AppDbContext _appDbContext;
+
+        public PostRepository(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
 
         public void AddPost(Post post)
         {
-            posts.Add(post);
+            _appDbContext.posts.Add(post);
+            _appDbContext.SaveChanges();
         }
 
         public List<Post> GetAllPosts()
         {
-            return posts;
+            return _appDbContext.posts.ToList<Post>();
         }
 
         public Post GetPost(int id)
         {
-            Post temp = posts.FirstOrDefault(i => i.id == id);
+            Post temp = _appDbContext.posts.FirstOrDefault(i => i.id == id);
             return temp;
         }
 
         public void RemovePost(int id)
         {
-            Post temp = posts.FirstOrDefault(i => i.id == id);
-            posts.Remove(temp);
+            Post temp = _appDbContext.posts.FirstOrDefault(i => i.id == id);
+            _appDbContext.posts.Remove(temp);
+            _appDbContext.SaveChanges();
         }
     }
 }

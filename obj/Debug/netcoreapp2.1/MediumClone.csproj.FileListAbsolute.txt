@@ -23,3 +23,4 @@ C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
