@@ -37,5 +37,14 @@ namespace MediumClone.Models
             _appDbContext.posts.Remove(temp);
             _appDbContext.SaveChanges();
         }
+
+        public void UpdatePost(int id, Post post)
+        {
+            var temp = GetPost(id);
+            temp.title = post.title;
+            temp.content = post.content;
+            _appDbContext.Update(temp);
+            _appDbContext.SaveChanges();
+        }
     }
 }

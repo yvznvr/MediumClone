@@ -11,5 +11,6 @@ namespace MediumClone.Models
         Post GetPost(int id);
         List<Post> GetAllPosts();
         void RemovePost(int id);
+        void UpdatePost(int id, Post post);
     }
 }

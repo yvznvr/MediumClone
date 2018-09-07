@@ -18,18 +18,18 @@ namespace MediumClone.Controllers
         }
         public IActionResult Index()
         {
-            var obj = new Post
-            {
-                title = "İlk Blog Başlığı",
-                content = "İlk blog içeriği"
-            };
-            repo.AddPost(obj);
-            var obj2 = new Post
-            {
-                title = "İkinci Blog Başlığı",
-                content = "İkinci blog içeriği"
-            };
-            repo.AddPost(obj2);
+            //var obj = new Post
+            //{
+            //    title = "İlk Blog Başlığı",
+            //    content = "İlk blog içeriği"
+            //};
+            //repo.AddPost(obj);
+            //var obj2 = new Post
+            //{
+            //    title = "İkinci Blog Başlığı",
+            //    content = "İkinci blog içeriği"
+            //};
+            //repo.AddPost(obj2);
             var obj3 = repo.GetPost(16);
             ViewData["secilenNesne"] = obj3;
 

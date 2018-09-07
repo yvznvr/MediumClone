@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+@inject SignInManager<IdentityUser> SignInManager
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -30,11 +31,18 @@
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
-                <a class="blog-nav-item active" href="#">Home</a>
-                <a class="blog-nav-item" href="#">New features</a>
-                <a class="blog-nav-item" href="#">Press</a>
-                <a class="blog-nav-item" href="#">New hires</a>
-                <a class="blog-nav-item" href="#">About</a>
+                <a class="blog-nav-item active" href="/">Home</a>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a>@User.Identity.Name</a>
+                    <a asp-action="Logout" asp-controller="Account">Logout</a>
+                }
+                else
+                {
+                    <a asp-action="Login" asp-controller="Account">Login</a>
+                    <a asp-action="Register" asp-controller="Account">Register</a>
+
+                }
             </nav>
         </div>
     </div>

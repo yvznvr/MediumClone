@@ -18,8 +18,13 @@ using MediumClone.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"45b0a179ab434e27214ae62d2d2e78c385b6c643", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ce6501c4f8dfa08787c91a7ce79e2e4c4d92a0cb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ac712ebd4884b17c5f74c43d23879a61e82b4d53", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Post>>
     {
         #pragma warning disable 1998

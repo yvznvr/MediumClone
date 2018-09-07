@@ -13,6 +13,14 @@ C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.TagHelpers.input.cache
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.TagHelpers.output.cache
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.RazorCoreGenerate.cache
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Post\AddPost.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Post\UpdatePost.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.RazorTargetAssemblyInfo.cache
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.RazorTargetAssemblyInfo.cs
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.Views.pdb
@@ -20,7 +28,3 @@ C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.pdb
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.csproj.CopyComplete
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.csprojAssemblyReference.cache
-C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
-C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
