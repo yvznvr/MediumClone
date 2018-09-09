@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MediumClone.Migrations
 {
-    public partial class Identity : Migration
+    public partial class relation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -152,6 +152,27 @@ namespace MediumClone.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "posts",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    title = table.Column<string>(nullable: true),
+                    content = table.Column<string>(nullable: true),
+                    userId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_posts", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_posts_AspNetUsers_userId",
+                        column: x => x.userId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -188,6 +209,11 @@ namespace MediumClone.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_posts_userId",
+                table: "posts",
+                column: "userId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -206,6 +232,9 @@ namespace MediumClone.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "posts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

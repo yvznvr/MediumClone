@@ -5,14 +5,7 @@
 {
     <div class="blog-post">
         <h2 class="blog-post-title">@item.title </h2>
-        <p class="blog-post-meta">Tarih <a href="#">Kullanıcı</a></p>
+        <p class="blog-post-meta">Yazar: <a href="#">@item.user</a></p>
         <h3>@item.content</h3>
     </div><!-- /.blog-post -->
 }
-
-@{
-    var data = (Post)ViewData["secilenNesne"];
-}
-
-<h2>Seçilen Nesne Başlığı: @data.title </h2>
-<h2>Seçilen Nesne Başlığı: @data.content </h2>

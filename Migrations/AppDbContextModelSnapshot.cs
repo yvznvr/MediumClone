@@ -25,7 +25,11 @@ namespace MediumClone.Migrations
 
                     b.Property<string>("title");
 
+                    b.Property<string>("userId");
+
                     b.HasKey("id");
+
+                    b.HasIndex("userId");
 
                     b.ToTable("posts");
                 });
@@ -185,6 +189,13 @@ namespace MediumClone.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("MediumClone.Models.Post", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "user")
+                        .WithMany()
+                        .HasForeignKey("userId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

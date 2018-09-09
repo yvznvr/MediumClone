@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace MediumClone.Models
 
         public List<Post> GetAllPosts()
         {
-            return _appDbContext.posts.ToList<Post>();
+            return _appDbContext.posts.Include(c => c.user).ToList<Post>();
         }
 
         public Post GetPost(int id)
