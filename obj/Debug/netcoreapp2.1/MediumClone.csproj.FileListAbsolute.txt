@@ -28,3 +28,4 @@ C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.pdb
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.csproj.CopyComplete
 C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\MediumClone.csprojAssemblyReference.cache
+C:\Users\Yavuz\Documents\VS Project\MediumClone\MediumClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\PostofUser.g.cshtml.cs

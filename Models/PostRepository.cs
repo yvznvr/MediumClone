@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,16 @@ namespace MediumClone.Models
         public List<Post> GetAllPosts()
         {
             return _appDbContext.posts.Include(c => c.user).ToList<Post>();
+        }
+
+        public List<Post> GetByUser(IdentityUser user)
+        {
+            var temp = _appDbContext.posts.Include(i => i.user).ToList<Post>();
+            foreach(var i in temp.ToArray())
+            {
+                if (i.user != user) temp.Remove(i);
+            }
+            return temp;
         }
 
         public Post GetPost(int id)

@@ -4,8 +4,8 @@
 @foreach (var item in Model)
 {
     <div class="blog-post">
-        <h2 class="blog-post-title">@item.title </h2>
-        <p class="blog-post-meta">Yazar: <a href="#">@item.user</a></p>
+        <h2 class="blog-post-title"><a href="/@item.user/post/@item.id">@item.title</a> </h2>
+        <p class="blog-post-meta">Yazar: <a href="#">@item.user</a> <a href="/Post/UpdatePost/@item.id">Düzenle</a> <a href="/Post/RemovePost/@item.id">Sil</a></p>
         <h3>@item.content</h3>
     </div><!-- /.blog-post -->
 }
